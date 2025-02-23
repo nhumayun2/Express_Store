@@ -3,9 +3,7 @@ import axios from "axios";
 import ProductCard from "../components/ProductCard";
 
 const fetchProducts = async () => {
-  const response = await axios.get(
-    "https://glore-bd-backend-node-mongo.vercel.app/api/product"
-  );
+  const response = await axios.get("api/product");
   return response.data.data;
 };
 
